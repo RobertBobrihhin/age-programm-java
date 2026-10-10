@@ -23,6 +23,15 @@ public class Age {
         }
 
         System.out.println("Hello " + name + ", you are " + age + " years old.");
+
+        if (age < 18) {
+            System.out.println("You are a minor. " + (18 - age) + " years until you are an adult.");
+        } else if (age < 65) {
+            System.out.println("You are an adult.");
+        } else {
+            System.out.println("You are a senior.");
+        }
+
         scanner.close();
     }
 }
